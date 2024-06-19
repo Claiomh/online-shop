@@ -22,6 +22,7 @@ class AuthController extends Controller
         if (auth('web')->attempt($data)) {
             return redirect('/');
         }
+
         return redirect(route('login'))->with('error', 'Loozer');
 
     }

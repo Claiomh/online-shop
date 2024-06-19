@@ -16,11 +16,6 @@ return new class extends Migration
             $table->string('title');
             $table->timestamps();
         });
-        Schema::create('roles', function (Blueprint $table) {
-            $table->id();
-            $table->string('title');
-            $table->timestamps();
-        });
     }
 
     /**
